@@ -1,4 +1,4 @@
 # vårt coola projekt
-här finns de tmycket grejer 
+här finns det mycket grejer 
 ## underrubrik
 **John Schürer**
