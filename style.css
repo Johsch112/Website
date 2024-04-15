@@ -3,45 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* /* 
 
-.container{
+.big-container{
+margin: 0 auto;
+width: 80%;
+max-width: 1200px;
+}
+
+.nav{
 display: flex;
-flex: wrap;
+flex-wrap: wrap;
+flex-direction: row;
+width: 100%;
 justify-content: space-between;
-
 }
 
-*/
-.mobile-nav{
+/* .mobile-nav{
   display: none;
-} 
-
-
-@media screen and (max-width:767px) {
-  .nav-ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-
-}
-  /* .mobile-nav {
-    display: flex;
-
-
-  }
-
-  .mobile-nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    list-style-type: none;
-    gap:28px;
-  }
-
-
-  .mobile-nav li a {
-    color: rgb(0, 0, 0);
-  }
 }  */
+
+
+/* @media screen and (max-width:767px) {
+
+  }
+
+} */
+
+#landing-page-boats{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
