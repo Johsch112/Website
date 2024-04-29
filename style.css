@@ -48,16 +48,10 @@ justify-content: space-between;
     color: rgb(0, 0, 0);
   }
 }  */
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin: auto;
+#articleContainer {
   text-align: center;
+  padding: 2rem;
 }
-
-.card img {
-  align-items: center;
+.card {
+  margin-bottom: 20px;
 }
