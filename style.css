@@ -13,16 +13,19 @@ justify-content: space-between;
 }
 
 */
-.mobile-nav{
+
+.mobile-nav {
   display: none;
-} 
+}
 
 
 @media screen and (max-width:767px) {
+  .mobile-nav {
+    display: flex;
+  }
+
   .nav-ul {
     display: none;
-    flex-direction: column;
-    width: 100%;
   }
 
 }
@@ -45,3 +48,16 @@ justify-content: space-between;
     color: rgb(0, 0, 0);
   }
 }  */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.card img {
+  align-items: center;
+}
