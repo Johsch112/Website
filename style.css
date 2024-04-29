@@ -52,38 +52,36 @@
   padding: 10px 20px;
 }
 
-
-
-/*---------------ImagesWithTextStyle---------------------------*/
-.imagecontainer{
+#logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 
+}
+
+/*---------------ImagesWithTextStyle---------------------------*/
+.imagecontainer {
+  display: flex;  
+  flex-direction: column;
 }
 
 .imagecontainer img{
-  width: 350px;
-  height: 350px;
+width: 55vw;
 }
 
- .imageboxright{
-  display: flex;
-justify-content: space-evenly;
-  flex-direction: row; 
-  text-align: right;
-}
 
-.imageboxleft{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  text-align: left;
-}  
+
+
+
+
+
+
+
+
+
 /*------------------------------------------*/
 
-.flagshipimage{
+.flagshipimage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,28 +91,35 @@ justify-content: space-evenly;
 
 
 /*---------------BoatCardStyle------------*/
-.boatcards{
+.boatcards {
   display: flex;
-justify-content: center;
-gap: 5vw;
-align-items: center;
-border: 1 px solid black;
-margin-bottom: 1vw;
+  justify-content: center;
+  gap: 5vw;
+  align-items: center;
+
+  margin-bottom: 1vw;
 }
 
-.boatcards img{
+.boatcards img {
   width: 200px;
-  height: 200px; 
+  height: 200px;
 }
 
-.card{
+.card {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-border: 1px solid black;
-  transition: transform 0.3s ease; 
+  border: 1.5px solid black;
+  border-radius: 3vw;
+  padding: 2vw;
+  transition: transform 0.3s ease;
 }
 
-.card:hover{
-  transform: scale(1.1); 
+.card p {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
