@@ -6,7 +6,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ffffff;
-  }
+  
 
 
   input[type=text], select, textarea {
@@ -59,8 +59,23 @@ body {
     
   }
 
-.footercontainer{
-    display: flex;
-    position: relative;
-    display: table-row-group;
+}
+ /*footer css kod*/
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+  
+  }
+
+  .footercontainer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 60px;
+  margin-bottom: 0px;
+}
+
+.label{
+  display: table-column;
 }
