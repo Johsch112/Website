@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
 }
@@ -67,7 +67,7 @@ img{
   background-image: url("bilder/bigboat.jpg");
   background-position: bottom;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 105vh;
   position: relative;
 
 }
@@ -94,7 +94,7 @@ img{
 }
 
 /* -------------LandingPage---------------- */
-#biglandingpage-boat {
+/* #biglandingpage-boat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,14 +102,36 @@ img{
   margin-bottom: 5vw;
 }
 
-
 #biglandingpage-boat img {
   width: 100%;
   height: auto;
+} */
+
+#under-header-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
+#under-header-image img {
+  width: 650px;
+  height: auto;
+  /* padding-right: 5vw; */
+}
 
+#under-header-image p {
+  font-size: 30px;
+  width: 50vw;
+  padding-left: 5vw;
+  text-align: center;
+}
 
+/* #under-header-image-left{
+display: flex;
+justify-content: left;
+} */
 
 /*---------------ImagesWithTextStyle---------------------------*/
 .imagecontainer {
@@ -180,10 +202,7 @@ img{
   max-width: 100%;
 }
 
-#boat {
-  width: 250px;
-  height: auto;
-}
+
 
 
 
@@ -256,21 +275,23 @@ img{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Filip was here */
+
+
+
+
+
+
+
+
+/* TESTING */
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
