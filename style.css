@@ -9,14 +9,6 @@ img {
   max-width: 100%;
 }
 
-@font-face {
-  font-family: 'ITC Avant Garde Gothic';
-  src: local('ITC Avant Garde Gothic Bold'), local('ITC-Avant-Garde-Gothic-Bold'),
-    url('font/ITCAvantGardeStd-Bold.woff2') format('woff2'),
-    url('font/ITCAvantGardeStd-Bold.woff') format('woff'),
-    url('font/ITCAvantGardeStd-Bold.ttf') format('truetype');
-}
-
 .mobile-nav {
   display: none;
 }
@@ -28,7 +20,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  width: 100%;
   max-width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -36,7 +27,6 @@ img {
 }
 
 .nav-ul li a {
-  font-family: 'ITC Avant Garde Gothic';
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
@@ -67,9 +57,11 @@ img {
   background-image: url("bilder/bigboat.jpg");
   background-position: bottom;
   background-size: cover;
-  min-height: 105vh;
+  min-height: 110vh;
   position: relative;
-
+}
+.site-header img {
+ max-width: 100%;
 }
 
 .site-header-mask {
@@ -87,7 +79,7 @@ img {
 
 .site-title {
   text-align: center;
-  font-size: 150px;
+  font-size: 131px;
   line-height: 1.5;
   position: fixed;
   width: 100%;
@@ -109,56 +101,32 @@ img {
 
 #under-header-image {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 0;
   margin-bottom: 15px;
+  background-image: url(bilder/bakgrund.jpg);
+  max-width: 100%;
 }
 
 #under-header-image img {
-  width: 650px;
+  margin-top: 2vw;
+  width: 30vw;
   height: auto;
-  /* padding-right: 5vw; */
+  padding-bottom: 2vw;
 }
 
 #under-header-image p {
-  font-size: 30px;
-  width: 50vw;
-  padding-left: 5vw;
+  font-family: sans-serif;
+  color: white;
+  background-color: grey;
+  margin-top: 2vw;
+  font-size: 2vw;
+  font-weight: bold;
+  width: 45vw;
   text-align: center;
+  border: 5px solid black;
 }
 
-/* #under-header-image-left{
-display: flex;
-justify-content: left;
-} */
-
-/*---------------ImagesWithTextStyle---------------------------*/
-.imagecontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-}
-
-.imagecontainer img {
-  width: 350px;
-  height: 350px;
-}
-
-.imageboxright {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  text-align: right;
-}
-
-.imageboxleft {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-}
 
 /*------------------------------------------*/
 
@@ -170,9 +138,15 @@ justify-content: left;
   height: 100px;
 }
 
+
+
+
+
 /*---------------BoatCardStyle------------*/
+
 .boatcards {
   display: flex;
+  font-family: sans-serif;
   justify-content: center;
   gap: 5vw;
   align-items: center;
@@ -213,7 +187,8 @@ justify-content: left;
 }
 
 #landing-page-boats video {
-  width: 1000px;
+  width: 60vw;
+  max-width: 100%;
 }
 
 
@@ -273,6 +248,14 @@ justify-content: left;
     transition: transform 0.3s ease;
   }
 
+
+  #under-header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
 }
 
 /*Filip was here */
