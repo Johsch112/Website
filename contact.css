@@ -4,12 +4,15 @@
 }
 */
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #236eaf;
-}
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #236eaf;
 
 
-  input[type=text], select, textarea {
+
+  /*----------css för contact modulen----------*/
+  input[type=text],
+  select,
+  textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -19,21 +22,21 @@ body {
     margin-bottom: 0;
     resize: vertical;
   }
-  
+
   input[type=submit] {
-    background-color:white;
+    background-color: white;
     color: rgb(255, 255, 255);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   input[type=submit]:hover {
     background-color: black;
     color: #9f9fa0;
   }
-  
+
   .container {
     border-radius: 5px;
     background-color: #0c77d4;
@@ -45,62 +48,123 @@ body {
   }
 
 
-  .submit{
+  .submit {
     border: 0;
     padding: 16px 40px;
-    background-color: #10fd04;
+    background-color: #ffffff;
     font-size: 20px;
-   align-self: flex-end;
-   border-radius: 10px;
-   margin-bottom: 100px;
+    align-self: flex-end;
+    border-radius: 10px;
+    margin-bottom: 100px;
   }
 
-  .submit:hover{
+  .submit:hover {
     background-color: #000;
     color: #061566;
     border-radius: 10px;
-    
+
   }
 
+  /*---------------------Footer---------------------*/
 
-  footer{
-    position:relative;
+  footer {
+    position: relative;
     bottom: 0;
     left: 0;
     width: auto;
     background-color: #f0f0f0;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: #000 1px solid;
+    border-right: #000 1px solid;
   }
 
-  .footercontainer{
-  display: grid;
-  grid-template-columns: 4fr 1fr 1fr; 
-  gap: 60px;
-  margin-bottom: 0px;
+  .copyright {
+    display: flex;
+    font-size: smaller;
+    bottom: 0;
+    left: 0;
+  }
+
+  .footercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 0px;
+    border-right: #000 1px solid;
+  }
+
+  @media screen and (max-width: 800px) {
+    .footercontainer2 {
+      display: none;
+      visibility: hidden;
+      margin-bottom: 20px;
+    }
+
+    .footercontainer {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: auto;
+      right: 0;
+    }
+  }
+
+  @media screen and (max-width: 293px) {
+    .footercontainer {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .socials {
+      display: none;
+      visibility: hidden;
+    }
+
+  }
+
+  /*----------css för ikoner i .socials----------*/
+
+  .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+
+  .copyright {
+    display: flex;
+    font-size: smaller;
+    bottom: 0;
+    left: 0;
+  }
 }
-
-@media screen and (max-width: 600px){
-  .footercontainer2{
-    display: none;
-    visibility: hidden;
-  }
- 
-  .footercontainer{
-    grid-template-columns: 1fr 1fr 1fr;
-    width: auto;
-    right: 0;
-  }
-} 
-@media screen and (max-width: 293px){
-  .footercontainer{
-    display: none;
-    visibility: hidden;
-  }
-}
-  
-
-
-
