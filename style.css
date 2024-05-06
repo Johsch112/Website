@@ -60,8 +60,9 @@ img {
   min-height: 110vh;
   position: relative;
 }
+
 .site-header img {
- max-width: 100%;
+  max-width: 100%;
 }
 
 .site-header-mask {
@@ -86,66 +87,56 @@ img {
 }
 
 /* -------------LandingPage---------------- */
-/* #biglandingpage-boat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  margin-bottom: 5vw;
-}
-
-#biglandingpage-boat img {
-  width: 100%;
-  height: auto;
-} */
 
 #under-header-image {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 15px;
-  background-image: url(bilder/bakgrund.jpg);
-  max-width: 100%;
+  margin-top: 0;
+  overflow: hidden;
+  background-image: url(bilder/goldenbackground.jpg);
 }
 
 #under-header-image img {
   margin-top: 2vw;
   width: 30vw;
   height: auto;
-  padding-bottom: 2vw;
+  border-radius: 4%;
+  margin-bottom: 2vw;
 }
 
 #under-header-image p {
   font-family: sans-serif;
   color: white;
-  background-color: grey;
+
+  backdrop-filter: blur(10px);
+
+  /* background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 215, 0, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 215, 0, 1) 50%);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 215, 0, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#ffd700", GradientType=1); */
+
+  border-radius: 12px;
   margin-top: 2vw;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: bold;
   width: 45vw;
   text-align: center;
-  border: 5px solid black;
+  margin-bottom: 2vw;
+  transition: all 1s ease;
 }
 
-
-/*------------------------------------------*/
-
-.flagshipimage {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
+#under-header-image p:hover {
+  transform: scale(1.1);
 }
-
-
-
 
 
 /*---------------BoatCardStyle------------*/
 
 .boatcards {
   display: flex;
+  margin-top: 3vw;
   font-family: sans-serif;
   justify-content: center;
   gap: 5vw;
@@ -195,6 +186,7 @@ img {
 /* --------MediaResponsivStyle--------- */
 
 @media screen and (max-width:767px) {
+
   .mobile-nav {
     display: flex;
     justify-content: right;
@@ -233,6 +225,43 @@ img {
     display: none;
   }
 
+  .site-title {
+    text-align: center;
+    font-size: 70px;
+    line-height: 1.5;
+  }
+
+.site-header{
+  min-height: 105vh
+}
+
+  
+
+  #under-header-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  #under-header-image img {
+    width: 30vw;
+  }
+
+  #under-header-image p {
+    backdrop-filter: blur(10px);
+    font-size: 6vw;
+    width: 45vw;
+    transition: all 0s ease;
+  }
+
+#under-header-image p:hover {
+  transform: scale(1.0);
+}
+
+
+
   .boatcards {
     display: flex;
     justify-content: center;
@@ -254,7 +283,6 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 15px;
   }
 }
 
@@ -273,6 +301,13 @@ img {
   transition: all 1s;
   transform: translateX(-100%);
 }
+
+.hiddenfromright {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+
 
 .show {
   opacity: 1;
