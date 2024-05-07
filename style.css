@@ -23,6 +23,7 @@ img {
   max-width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
+  background-color: marin;
   transition: 0.3s ease;
 }
 
@@ -79,13 +80,13 @@ img {
 }
 
 .site-title {
+  color: black;
   text-align: center;
   font-size: 131px;
   line-height: 1.5;
   position: fixed;
   width: 100%;
 }
-
 /* -------------LandingPage---------------- */
 
 #under-header-image {
