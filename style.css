@@ -2,12 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
- /* body {
-  border: 5px solid rgb(255, 0, 0);
-}  */
 
 img {
   display: block;
@@ -28,7 +24,6 @@ nav {
 .nav-ul {
   display: flex;
   position: absolute;
-  top: 0;
   z-index: 1;
   list-style-type: none;
   justify-content: center;
@@ -38,6 +33,7 @@ nav {
   padding-top: 15px;
   padding-bottom: 15px;
   transition: 0.3s ease;
+  margin-top: 120vh;
 }
 
 .nav-ul li a {
@@ -68,7 +64,7 @@ nav {
 
 /* -----------------CoolHeaderimageStyle----------------------- */
 .site-header {
-  background-image: url("bilder/bigboat.jpg");
+  background-image: url("bilder/bigboat.webp");
   background-position: bottom;
   background-size: cover;
   min-height: 110vh;
@@ -109,7 +105,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  background-image: url(bilder/GuldBakgrund.jpg);
+  background-image: url(bilder/GuldBakgrund.webp);
   background-position: center;
 
 }
@@ -183,11 +179,52 @@ nav {
 
 
 #bottomimagewrapper{
-background-image: url(bilder/GuldBakgrund.jpg);
+background-image: url(bilder/GuldBakgrund.webp);
 }
 
 
 /* --------MediaResponsivStyle--------- */
+
+/*Filip was here */
+
+/* TESTING */
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.hiddenfromright {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(100%);
+}
+
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+#scrollanimation {
+  animation-name: scrolleranimation;
+  animation-duration: 1ms; 
+  animation-timeline: scroll(block nearest) ;
+}
+
+
+
+
+
+@keyframes scrolleranimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.01);
+  }
+}
 
 @media screen and (max-width:767px) {
 
@@ -278,6 +315,9 @@ background-image: url(bilder/GuldBakgrund.jpg);
     transition: transform 0.3s ease;
   }
 
+  .card img{
+    min-height: 20vh;
+  }
 
   #under-header-image {
     display: flex;
@@ -285,32 +325,10 @@ background-image: url(bilder/GuldBakgrund.jpg);
     align-items: center;
     flex-direction: column;
   }
-}
 
-/*Filip was here */
-
-
-
-
-
-
-
-
-/* TESTING */
-.hidden {
-  opacity: 0;
-  transition: all 1s;
-  transform: translateX(-100%);
-}
-
-.hiddenfromright {
-  opacity: 0;
-  transition: all 1s;
-  transform: translateX(100%);
-}
-
-
-.show {
-  opacity: 1;
-  transform: translateX(0);
+  #scrollanimation {
+    animation-name: none;
+    animation-duration: 0ms; 
+    animation-timeline: scroll(block nearest) ;
+  }
 }
