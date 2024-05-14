@@ -82,6 +82,101 @@ nav {
   max-width: 100%;
 }
 
+/*Footer*/
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  background-color: #f0f0f0;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10px;
+  border-right: #000 1px solid;
+}
+
+
+.footercontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 0px;
+  border-right: #000 1px solid;
+}
+
+@media screen and (max-width: 800px) {
+  .footercontainer2 {
+    display: none;
+    visibility: hidden;
+    margin-bottom: 20px;
+  }
+
+  .footercontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 293px) {
+  .footercontainer {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .socials {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  font-size: smaller;
+  bottom: 0;
+  left: 0;
+}
+
 /*Mobile Nav*/
 
 @media screen and (max-width:767px) {
