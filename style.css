@@ -59,8 +59,19 @@ nav {
 }
 
 .nav-ul li a:hover {
-  background-color: rgb(0, 4, 255);
+  background-color: rgb(113, 130, 127);
 }
+
+
+#diveicon {
+  display: flex;
+  position: absolute;
+  width: 5vw;
+  z-index: 2;
+  margin-top: 10vh;
+  margin-left: 50vw;
+}
+
 
 /* -----------------CoolHeaderimageStyle----------------------- */
 .site-header {
@@ -89,6 +100,7 @@ nav {
 }
 
 .site-title {
+  animation-name: scrolleranimation;
   font-family: arial black;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -105,9 +117,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  background-image: url(bilder/GuldBakgrund.webp);
   background-position: center;
-
 }
 
 .under-header-image img {
@@ -119,6 +129,8 @@ nav {
 }
 
 .under-header-image p {
+  display: flex;
+  justify-content: center;
   font-family: sans-serif;
   color: white;
   backdrop-filter: blur(10px);
@@ -137,51 +149,10 @@ nav {
 }
 
 
-/*---------------BoatCardStyle------------*/
 
-.boatcards {
-  display: flex;
-  margin-top: 0;
-  font-family: sans-serif;
-  justify-content: center;
-  gap: 5vw;
-  align-items: center;
-  margin-bottom: 1vw;
+#bottomimagewrapper {
+  background-image: url(bilder/DeepSeaFINAL.webp);
 }
-
-.boatcards img {
-  width: 16vw;
-  height: 16vw;
-}
-
-.card {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  transition: transform 0.3s ease;
-  text-align: center;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-#landing-page-boats {
-  display: flex;
-  justify-content: center;
-}
-
-#landing-page-boats video {
-  width: 60vw;
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-
-#bottomimagewrapper{
-background-image: url(bilder/GuldBakgrund.webp);
-}
-
 
 /* --------MediaResponsivStyle--------- */
 
@@ -209,22 +180,107 @@ background-image: url(bilder/GuldBakgrund.webp);
 
 #scrollanimation {
   animation-name: scrolleranimation;
-  animation-duration: 1ms; 
-  animation-timeline: scroll(block nearest) ;
+  animation-duration: 1ms;
+  animation-timeline: scroll(block nearest);
+}
+
+
+
+#lowestimage {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#lowestimage p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+  color: white;
+  font-size: 4vw;
+  border: 100px red;
+  position: absolute;
+  width: 100%;
+}
+
+#lowestimage img {
+  max-width: 100%;
 }
 
 
 
 
-
-@keyframes scrolleranimation {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0.01);
-  }
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  background-color: #f0f0f0;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10px;
+  border-right: #000 1px solid;
 }
+
+
+.footercontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 0px;
+  border-right: #000 1px solid;
+}
+
+
+
+/*----------css för ikoner i .socials----------*/
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.copyright {
+  display: flex;
+  font-size: smaller;
+  bottom: 0;
+  left: 0;
+}
+
+
 
 @media screen and (max-width:767px) {
 
@@ -278,57 +334,60 @@ background-image: url(bilder/GuldBakgrund.webp);
     display: none;
   }
 
-  #under-header-image {
+  .under-header-image {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 0;
-    max-width: 100%;
+    flex-direction: column;
   }
 
-  #under-header-image img {
+
+  .under-header-image img {
     width: 60vw;
+    flex-direction: column;
   }
 
-  #under-header-image p {
+  .under-header-image p {
     backdrop-filter: blur(10px);
     font-size: 4vw;
     width: 100%;
     transition: all 0s ease;
+    padding: 1.5rem;
   }
 
+  .under-header-image p:hover {
+    transform: none;
+  }
+  
+
+}
 
 
-
-  .boatcards {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
+@media screen and (max-width: 800px) {
+  .footercontainer2 {
+    display: none;
+    visibility: hidden;
+    margin-bottom: 20px;
   }
 
-  .card {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease;
+  .footercontainer {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: auto;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 293px) {
+  .footercontainer {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .socials {
+    display: none;
+    visibility: hidden;
   }
 
-  .card img{
-    min-height: 20vh;
-  }
-
-  #under-header-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  #scrollanimation {
-    animation-name: none;
-    animation-duration: 0ms; 
-    animation-timeline: scroll(block nearest) ;
-  }
 }
