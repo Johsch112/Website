@@ -63,16 +63,6 @@ nav {
 }
 
 
-#diveicon {
-  display: flex;
-  position: absolute;
-  width: 5vw;
-  z-index: 2;
-  margin-top: 10vh;
-  margin-left: 50vw;
-}
-
-
 /* -----------------CoolHeaderimageStyle----------------------- */
 .site-header {
   background-image: url("bilder/bigboat.webp");
@@ -110,6 +100,22 @@ nav {
 }
 
 /* -------------LandingPage---------------- */
+#logounderheader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29,29,25);
+  flex-direction: column;
+}
+
+#logounderheader h2{
+  color: white;
+}
+
+#logounderheader img{
+  width: 10vw;
+}
+
 
 .under-header-image {
   display: flex;
@@ -141,6 +147,23 @@ nav {
   text-align: center;
   margin-bottom: 2vw;
   transition: all 1s ease;
+}
+
+
+.under-header-image h2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+.underheaderimagetitle{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .under-header-image p:hover {
@@ -296,7 +319,7 @@ footer {
   .site-header {
     min-height: 100vh
   }
-  
+
   .mobile-nav {
     display: flex;
     position: absolute;
@@ -350,35 +373,53 @@ footer {
   }
 
   .under-header-image p {
-    backdrop-filter: blur(10px);
     font-size: 4vw;
     width: 100%;
     transition: all 0s ease;
     padding: 1.5rem;
   }
 
+  .under-header-image h2 {
+    font-size: 4vw;
+    width: 100%;
+    transition: all 0s ease;
+    padding: 1.5rem;
+    margin-bottom: 0.5vh;
+  }
+
   .under-header-image p:hover {
     transform: none;
   }
+
+#logounderheader img{
+  width: 50vw;
+}
+}
+
+
+@media screen and (max-width: 854px) {
 
 }
 
 /*MobileStyle*/
 
 @media screen and (max-width: 415px) {
-  .mobile-nav li a{
-    font-size: 20px;
+  .mobile-nav li a {
+    font-size: 18px;
 
   }
 }
+
+
 
 @media screen and (max-width: 376px) {
-  .mobile-nav li a{
+  .mobile-nav li a {
     font-size: 16px;
   }
-#lowestimage p{
-font-size: 25px;
-}
+
+  #lowestimage p {
+    font-size: 25px;
+  }
 }
 
 
@@ -414,4 +455,3 @@ font-size: 25px;
   }
 
 }
-
