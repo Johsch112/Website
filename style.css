@@ -287,6 +287,16 @@ footer {
 
 @media screen and (max-width:767px) {
 
+  .site-title {
+    margin-top: 75px;
+    font-size: 70px;
+    line-height: 1.5;
+  }
+
+  .site-header {
+    min-height: 100vh
+  }
+  
   .mobile-nav {
     display: flex;
     position: absolute;
@@ -299,17 +309,6 @@ footer {
     max-width: 100%;
     margin-top: 100px;
   }
-
-  .site-title {
-    margin-top: 75px;
-    font-size: 70px;
-    line-height: 1.5;
-  }
-
-  .site-header {
-    min-height: 100vh
-  }
-
 
   .mobile-nav li a {
     color: rgb(255, 255, 255);
@@ -362,9 +361,30 @@ footer {
     transform: none;
   }
 
-
 }
 
+/*MobileStyle*/
+
+@media screen and (max-width: 415px) {
+  .mobile-nav li a{
+    font-size: 20px;
+
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .mobile-nav li a{
+    font-size: 16px;
+  }
+#lowestimage p{
+font-size: 25px;
+}
+}
+
+
+
+
+/*FooterStyle*/
 
 @media screen and (max-width: 800px) {
   .footercontainer2 {
@@ -394,3 +414,4 @@ footer {
   }
 
 }
+
