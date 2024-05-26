@@ -160,7 +160,7 @@ nav {
   }
 
   @media screen and (max-width: 767px) {
-    .footercontainer2 {
+    .socials {
       display: none;
       visibility: hidden;
       margin-bottom: 20px;
