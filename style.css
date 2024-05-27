@@ -103,14 +103,18 @@
   text-align: center;
 }
 
+.aboutcard {
+  margin-bottom: 20px;
+}
+
+#aboutcardcontainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
 
 @media (max-width: 768px) {
-  #cardContainer {
-    flex-direction: column;
-  }
-
-  .card {
-    flex-basis: 100%;
+  .aboutcard {
     margin-bottom: 10px;
   }
 }
@@ -169,11 +173,11 @@ color: white;
 
 }
 
-.card p{
+. p{
   padding: 1px;
 }
 
-.card:hover{
+.:hover{
 transform: scale(1.04);
 }
 
@@ -288,12 +292,12 @@ footer {
     padding: 0px;
   }
 
-  .card{
+  .{
     width: 100%;
     transition: none;
   }
 
-  .card:hover{
+  .:hover{
     transform: none;
     transition: none;
   }
