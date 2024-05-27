@@ -103,20 +103,6 @@
   text-align: center;
 }
 
-/*Article*/
-
-#articleContainer {
-  text-align: center;
-  padding: 2rem;
-  max-width: 100%;
-  margin: 0;
-}
-
-/*Card*/
-
-.card {
-  margin-bottom: 20px;
-}
 
 @media (max-width: 768px) {
   #cardContainer {
@@ -188,4 +174,21 @@
 .show{
 opacity: 1;
 transform: translateY(0);
+}
+
+#topproduct{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  gap: 1vw;
 }
