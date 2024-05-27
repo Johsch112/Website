@@ -65,7 +65,7 @@ nav {
 
 /* -----------------CoolHeaderimageStyle----------------------- */
 .site-header {
-  background-image: url("bilder/bigboat.webp");
+  background-image: url("img/bigboat.webp");
   background-position: bottom;
   background-size: cover;
   min-height: 110vh;
@@ -80,11 +80,11 @@ nav {
   position: absolute;
   inset: 0;
 
-  -webkit-mask: url("bilder/BigBoatMask.svg");
+  -webkit-mask: url("img/BigBoatMask.svg");
   -webkit-mask-position: bottom;
   -webkit-mask-size: 100%;
 
-  mask: url("bilder/BigBoatMask.svg");
+  mask: url("img/BigBoatMask.svg");
   mask-position: bottom;
   mask-size: cover;
 }
@@ -173,7 +173,7 @@ flex-direction: column;
 
 
 #bottomimagewrapper {
-  background-image: url(bilder/DeepSeaFINAL.webp);
+  background-image: url(img/DeepSeaFINAL.webp);
 }
 
 /* --------MediaResponsivStyle--------- */
@@ -406,7 +406,6 @@ footer {
 @media screen and (max-width: 415px) {
   .mobile-nav li a {
     font-size: 18px;
-
   }
 }
 
@@ -419,6 +418,12 @@ footer {
 
   #lowestimage p {
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .mobile-nav li a {
+    font-size: 15px;
   }
 }
 
