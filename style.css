@@ -199,15 +199,6 @@ flex-direction: column;
   transform: translateX(0);
 }
 
-
-#scrollanimation {
-  animation-name: scrolleranimation;
-  animation-duration: 1ms;
-  animation-timeline: scroll(block nearest);
-}
-
-
-
 #lowestimage {
   display: flex;
   max-width: 100%;
