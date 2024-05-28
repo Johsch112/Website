@@ -609,6 +609,12 @@ blockquote {
     flex-basis: 100%;
     margin-bottom: 10px;
   }
+
+  .prproducts{
+    flex-direction: column;
+
+
+  }
 }
 
 
@@ -696,16 +702,11 @@ transform: scale(1.04);
     transition: none;
   }
 
-
-  body{
-    margin: 2vw;
-  }
 }
 
 
 #ctbody-background{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(image/pexels-dsnsyj-1139541.webp);
+    background-image: url(img/pexels-dsnsyj-1139541.webp);
   }
  
  
