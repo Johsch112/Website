@@ -7,7 +7,7 @@
 
 /*Nav*/
 
-.nav-ul {
+.prnav-ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
@@ -19,7 +19,7 @@
   transition: 0.3s ease;
 }
 
-.nav-ul li a {
+.prnav-ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
@@ -29,38 +29,38 @@
   padding: 10px 20px;
 }
 
-.nav-ul li {
+.prnav-ul li {
   transition: 0.3s ease;
 }
 
-.nav-ul li:hover {
+.prnav-ul li:hover {
   transform: scale(1.1);
 }
 
-.nav-ul li a {
+.prvnav-ul li a {
   transition: 0.3s ease;
 }
 
-.nav-ul li a:hover {
+.prnav-ul li a:hover {
   background-color: rgb(255, 255, 255);
 }
 
-.mobile-nav {
+.prmobile-nav {
   display: none;
 }
 
 /*Mobile Nav*/
 
 @media screen and (max-width:767px) {
-  .mobile-nav {
+  .prmobile-nav {
     display: flex;
   }
 
-  .nav-ul {
+  .prnav-ul {
     display: none;
   }
 
-  .mobile-nav {
+  .prmobile-nav {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@
     margin-bottom: 30px;
   }
 
-  .mobile-nav li a {
+  .prmobile-nav li a {
     display: flex;
     color: black;
     text-decoration: none;
@@ -82,24 +82,24 @@
     padding: 9px 19px;
   }
 
-  .mobile-nav li {
+  .prmobile-nav li {
     transition: transform 0.3s ease;
   }
 
-  .mobile-nav li:hover {
+  .prmobile-nav li:hover {
     transform: scale(1.1);
   }
 
-  .nav-ul {
+  .prnav-ul {
     display: none;
   }
 
-  .nav-ul li a {
+  .prnav-ul li a {
     display: none;
   }
 }
 
-#headerContainer {
+#prheaderContainer {
   text-align: center;
 }
 
@@ -129,7 +129,7 @@
   transform: translateY(0);
 }
 
-#topproduct {
+#prtopproduct {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +138,7 @@
 
 }
 
-.products {
+.prproducts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +194,7 @@ footer {
 }
 
 
-.footercontainer {
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 60px;
@@ -257,7 +257,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .footercontainer {
+  footer {
     grid-template-columns: 1fr 1fr 1fr;
     width: auto;
     right: 0;
@@ -265,7 +265,7 @@ footer {
 }
 
 @media screen and (max-width: 293px) {
-  .footercontainer {
+  footer {
     display: none;
     visibility: hidden;
   }
